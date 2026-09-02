@@ -1,0 +1,40 @@
+<html>
+    <style>
+        body {
+            background-image: url("bg.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-80%, -10%);
+            background: blue;
+    background-color: transparent;
+    border: none;
+    outline: none;
+            
+        }
+
+
+        
+    </style>
+    <body>
+         <button onclick="clicked();" > <img src="gift_image.jpeg"  id="change" width="300px" height="300px"></button>
+       
+        <script>
+            function clicked(){
+                document.getElementById("change").src = "box_open.jpeg";
+
+                setTimeout(function() {
+                    window.location.href = "env.html";
+                }, 2000);
+
+            }
+
+        </script>
+    </body>
+</html>
